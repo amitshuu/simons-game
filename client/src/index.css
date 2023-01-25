@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.simon-board {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin-bottom: -2rem;
+}
+.buttons-container {
+  position: relative;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.btn {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+}
+
+.red {
+  left: 15px;
+  top: 15px;
+  background: rgb(255, 0, 0);
+  border-radius: 320px 20px 20px;
+  opacity: 0.75;
+  border: none;
+  cursor: pointer;
+}
+.green {
+  right: 15px;
+  top: 15px;
+  background: rgb(0, 255, 0);
+  border-radius: 20px 320px 20px 20px;
+  opacity: 0.75;
+  border: none;
+  cursor: pointer;
+}
+.yellow {
+  bottom: 15px;
+  right: 15px;
+  background: rgb(255, 255, 0);
+  border-radius: 20px 20px 320px 20px;
+  opacity: 0.75;
+  cursor: pointer;
+
+  border: none;
+}
+.blue {
+  bottom: 15px;
+  left: 15px;
+  background: rgb(0, 0, 255);
+  border-radius: 20px 20px 20px 320px;
+  opacity: 0.75;
+  cursor: pointer;
+  border: none;
+}
+.simon-board::before {
+  content: '';
+  left: 50%;
+  top: 50%;
+  border-radius: 85px;
+  position: absolute;
+  display: flex;
+  width: 170px;
+  height: 170px;
+  background: #000;
+  z-index: 99;
+  margin: -85px;
+}
+
+.simon-text {
+  font-size: 17px;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  width: 120px;
+  height: 80px;
+  padding-top: 50px;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  z-index: 100;
+  margin: -60px;
+}
+
+.opcaity {
+  opacity: 1;
+}
+
+.simons-turn {
+  opacity: 1;
+}
+
+.simon-board-container {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  height: 50%;
+}
+h3,
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
