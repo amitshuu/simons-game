@@ -107,7 +107,6 @@ const SimonBoard = ({ setScore, score, userFromLocalStorage }: Props) => {
 
   useEffect(() => {
     const displaySequence = (simonsIndex = 0) => {
-      console.log(simonsIndex);
       if (colorSequence.length > 0) {
         setIsComputerPlaying(true);
         const ref = generateRefs(colorSequence[simonsIndex]);
